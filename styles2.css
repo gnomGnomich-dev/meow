@@ -1,0 +1,234 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-text h1 {
+    font-size: 32px; /* Увеличение размера текста */
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 16px; /* Увеличение размера текста */
+    color: #666;
+}
+
+.profile-image {
+    width: 250px; /* Увеличение размера фото */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 30px; /* Сдвиг фото на 30px вправо */
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный фон */
+    margin: 5% auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%; /* Уменьшаем ширину */
+    max-width: 600px; /* Уменьшаем максимальную ширину */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/* === Раздел достижений === */
+.achievements-section {
+    padding: 2em 1em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.achievements-section h2 {
+    font-size: 28px; /* Увеличение размера заголовка */
+    margin-bottom: 20px;
+}
+
+/* Галерея грамот */
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card figcaption {
+    padding: 1em;
+    text-align: center;
+}
+
+.card figcaption h3 {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+.card figcaption p {
+    font-size: 14px;
+    color: #888;
+}
+
+/* === Модальное окно === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    user-select: none;
+}
+/* Раздел Контакты */
+.contacts-section {
+    padding: 60px 0; /* Убираем горизонтальные отступы */
+    background-color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    width: calc(100% - 400px); /* Ширина контейнера минус 200px слева и 200px справа */
+    max-width: 600px; /* Максимальная ширина текста */
+    margin-left: 200px; /* Отступ слева */
+}
+
+.contacts-section p {
+    font-size: 16px;
+    text-align: left; /* Текст по левому краю */
+    width: 100%;
+    margin-bottom: 10px; /* Увеличение расстояния между строками */
+}
+
+.contacts-section a {
+    color: inherit; /* Наследует цвет родительского элемента */
+    text-decoration: none; /* Убирает подчеркивание */
+}

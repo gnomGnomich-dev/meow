@@ -1,0 +1,285 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный фон */
+    margin: 5% auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; /* Увеличиваем ширину */
+    max-width: 900px; /* Увеличиваем максимальную ширину */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/* Слайдер */
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+    width: 100%;
+    max-width: 800px; /* Максимальная ширина */
+    margin: auto;
+    height: 100%; /* Занимает всю доступную высоту */
+}
+
+.slide-image {
+    width: 100%;
+    max-width: 600px; /* Максимальная ширина */
+    height: 500px; /* Фиксированная высота */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px; /* Стрелка "Назад" слева */
+}
+
+.next {
+    right: 10px; /* Стрелка "Вперед" справа */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Уменьшаем ширину на мобильных устройствах */
+        max-width: 100%; /* Максимальная ширина */
+    }
+
+    .slide-image {
+        height: 400px; /* Уменьшаем высоту на мобильных устройствах */
+    }
+}
+
+/* Шапка */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-text h1 {
+    font-size: 32px; /* Увеличение размера текста */
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 16px; /* Увеличение размера текста */
+    color: #666;
+}
+
+.profile-image {
+    width: 250px; /* Увеличение размера фото */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 30px; /* Сдвиг фото на 30px вправо */
+}
+
+/* Раздел Фотографии */
+.photos-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center; /* Центрирование секции */
+}
+
+.photos-section h2 {
+    font-size: 28px; /* Увеличение размера заголовка */
+    margin-bottom: 20px;
+}
+
+.photo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Увеличение ширины карточек */
+    gap: 20px;
+    justify-items: center; /* Центрирование карточек по горизонтали */
+    max-width: 1200px; /* Ограничение ширины контента */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px; /* Установка фиксированной ширины */
+    height: auto; /* Высота автоматическая */
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Раздел Обо мне */
+.about-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    font-size: 28px; /* Тот же размер, что и у "Контакты" */
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* Расстояние между фото и текстом */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.author-image {
+    width: 300px; /* Увеличенное фото */
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Меньше отступ, чтобы фото сдвинулось влево */
+}
+
+.about-text {
+    font-size: 18px; /* Крупнее текст */
+    line-height: 1.7;
+    text-align: justify; /* Текст выравнен по ширине */
+    flex: 1;
+}
+
+/* Раздел Контакты */
+.contacts-section {
+    padding: 60px 0; /* Убираем горизонтальные отступы */
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    width: calc(100% - 400px); /* Ширина контейнера минус 200px слева и 200px справа */
+    max-width: 600px; /* Максимальная ширина текста */
+    margin-left: 200px; /* Отступ слева */
+}
+
+.contacts-section p {
+    font-size: 16px;
+    text-align: left; /* Текст по левому краю */
+    width: 100%;
+    margin-bottom: 10px; /* Увеличение расстояния между строками */
+}
+
+.contacts-section a {
+    color: inherit; /* Наследует цвет родительского элемента */
+    text-decoration: none; /* Убирает подчеркивание */
+}

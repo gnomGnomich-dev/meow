@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index2.html">Портфолио</a></li>
+                <li><a href="#photos">Фотографии</a></li>
+                <li><a href="#about">О воспитателе</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Кондрина Евгения Сергеевна</h1>
+                <p>МБДОУ № 92 "Детский сад комбинированного вида" г.Кемерово</p>
+            </div>
+            <img src="img/a.png" alt="Профильное фото" class="profile-image">
+        </div>
+    </header>
+
+<!-- Раздел Фотографии -->
+<section id="photos" class="photos-section">
+    <h2>Фотографии</h2>
+    <div class="photo-cards">
+
+        <!-- Карточка 1: Выпускной -->
+        <div class="card" data-modal-id="gallery-1">
+            <img src="img/a.png" alt="Выпускной">
+            <div class="card-content">
+                <h3>Выпускной</h3>
+                <p>10 фотографий</p>
+            </div>
+        </div>
+
+        <!-- Модальное окно для Выпускного -->
+<div id="gallery-1" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <img class="slide-image" src="" alt="Слайд">
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="gallery-images" style="display: none;">
+            <img src="img/a.png" alt="Фото 1">
+            <img src="img/a2.png" alt="Фото 2">
+            <img src="img/a3.jpg" alt="Фото 3">
+        </div>
+    </div>
+</div>
+        <!-- Карточка 2: Конкурс чтецов -->
+        <div class="card" data-modal-id="gallery-2">
+            <img src="img/a.png" alt="Конкурс чтецов ">
+            <div class="card-content">
+                <h3>Конкурс Чтецов</h3>
+                <p>15 фотографий</p>
+            </div>
+        </div>
+
+        <!-- Модальное окно для Конкурса чтецов -->
+<div id="gallery-2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <img class="slide-image" src="" alt="Слайд">
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="gallery-images" style="display: none;">
+            <img src="img/a.png" alt="Фото 1">
+            <img src="img/a2.png" alt="Фото 2">
+            <img src="img/a3.jpg" alt="Фото 3">
+        </div>
+    </div>
+</div>
+        <!-- Карточка 3: Праздник Осени -->
+        <div class="card" data-modal-id="gallery-3">
+            <img src="img/a.png" alt="Праздник Осени">
+            <div class="card-content">
+                <h3>Праздник Осени</h3>
+                <p>10 фотографий</p>
+            </div>
+        </div>
+
+        <!-- Модальное окно для Праздника Осени -->
+<div id="gallery-3" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <img class="slide-image" src="" alt="Слайд">
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="gallery-images" style="display: none;">
+            <img src="img/a.png" alt="Фото 1">
+            <img src="img/a2.png" alt="Фото 2">
+            <img src="img/a3.jpg" alt="Фото 3">
+        </div>
+    </div>
+</div>
+
+        <!-- Карточка 4: День матери -->
+        <div class="card" data-modal-id="gallery-4">
+            <img src="img/a.png" alt="День матери">
+            <div class="card-content">
+                <h3>День Матери</h3>
+                <p>16 фотографий</p>
+            </div>
+        </div>
+
+        <!-- Модальное окно для День матери -->
+<div id="gallery-4" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <img class="slide-image" src="" alt="Слайд">
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="gallery-images" style="display: none;">
+            <img src="img/a.png" alt="Фото 1">
+            <img src="img/a2.png" alt="Фото 2">
+            <img src="img/a3.jpg" alt="Фото 3">
+        </div>
+    </div>
+</div>
+
+        <!-- Карточка 5: День Знаний -->
+        <div class="card" data-modal-id="gallery-5">
+            <img src="img/a.png" alt="День Знаний">
+            <div class="card-content">
+                <h3>День Знаний</h3>
+                <p>12 фотографий</p>
+            </div>
+        </div>
+
+        <!-- Модальное окно для Дня Знаний -->
+<div id="gallery-5" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <img class="slide-image" src="" alt="Слайд">
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="gallery-images" style="display: none;">
+            <img src="img/a.png" alt="Фото 1">
+            <img src="img/a2.png" alt="Фото 2">
+            <img src="img/a3.jpg" alt="Фото 3">
+        </div>
+    </div>
+</div>
+        <!-- Карточка 6: Новый Год -->
+        <div class="card" data-modal-id="gallery-6">
+            <img src="img/a.png" alt="Новый Год">
+            <div class="card-content">
+                <h3>Новый Год</h3>
+                <p>20 фотографий</p>
+            </div>
+        </div>
+
+        <!-- Модальное окно для Нового Года -->
+<div id="gallery-6" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <img class="slide-image" src="" alt="Слайд">
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="gallery-images" style="display: none;">
+            <img src="img/a.png" alt="Фото 1">
+            <img src="img/a2.png" alt="Фото 2">
+            <img src="img/a3.jpg" alt="Фото 3">
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<!-- Секция Обо мне -->
+<section id="about" class="about-section">
+    <h2>О воспитателе</h2>
+    <div class="about-content">
+        <img src="img/a.png" alt="Фото автора" class="author-image">
+        <p class="about-text">
+            Ваш текст здесь...
+        </p>
+    </div>
+</section>              
+
+<!-- Секция Контакты -->
+<section id="contacts" class="contacts-section">
+    <h2>Контакты</h2>
+    <div class="contacts-info">
+        <p>Телефон: <a href="tel:+7 384 225-13-12">+7 384 225-13-12</a></p>
+        <p>Email: <a href="mailto:mdoy92@mail.ru">mdoy92@mail.ru</a></p>
+    </div>
+</section>
+
+<!-- Подключение скрипта -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('[data-modal-id]');
+    const modals = document.querySelectorAll('.modal');
+
+    // Открытие модального окна
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const modalId = card.getAttribute('data-modal-id');
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'block';
+                resetSlider(modal); // Устанавливаем первую картинку
+            }
+        });
+    });
+
+    // Настройка каждого модального окна
+    modals.forEach(modal => {
+        const closeBtn = modal.querySelector('.close');
+        const prevBtn = modal.querySelector('.prev');
+        const nextBtn = modal.querySelector('.next');
+        const slideImage = modal.querySelector('.slide-image');
+        const images = Array.from(modal.querySelectorAll('.gallery-images img')).map(img => img.src);
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            if (index < 0) index = images.length - 1;
+            if (index >= images.length) index = 0;
+            slideImage.src = images[index];
+            currentIndex = index;
+        }
+
+        prevBtn?.addEventListener('click', () => showSlide(currentIndex - 1));
+        nextBtn?.addEventListener('click', () => showSlide(currentIndex + 1));
+
+        // Закрытие по крестику
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Закрытие по клику вне окна
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+
+    // Сброс слайдера при открытии
+    function resetSlider(modal) {
+        const images = Array.from(modal.querySelectorAll('.gallery-images img')).map(img => img.src);
+        const slideImage = modal.querySelector('.slide-image');
+        if (images.length > 0 && slideImage) {
+            slideImage.src = images[0]; // Установить первую картинку
+        }
+    }
+});
+
+</script>
